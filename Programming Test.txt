@@ -1,6 +1,6 @@
 Test composed by 2 functions
 
-A) Similar to the first function of the Mouse Lab. 
+A) Similar to the first function of the Mouse Lab.  Worth 12 points/20. If not implemented, no point in implementing the 2nd function ( :) )
    Introduced a similar controller for the mouse. Presented the status word, in which:
       -> If BIT(7) was set, data reporting was enabled for the mouse
       -> If BIT(3) was set, in each interrupt, a packet would be read/parsed. If not set, a byte would be read in each interrupt
