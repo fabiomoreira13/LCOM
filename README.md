@@ -1,2 +1,0 @@
-# LCOM
-Computer Lab
