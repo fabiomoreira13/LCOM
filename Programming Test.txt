@@ -18,7 +18,7 @@ A) Similar to the first function of the Mouse Lab.  Worth 12 points/20. If not i
          //In the x variation example:
          uint8_t tmp = BIT(6) | BIT(5) | BIT(4) | BIT(3) | BIT(2) | BIT(1) | BIT(0); //get the last 7 bits. The 8th represents the signal
          if (byte_read < 0) pp.delta_x = tmp - 128 (2^7); else pp.delta_x = tmp; (pp was the struct which had the information of each packet read, just like in the LAB).
-         a
+         
                
    The exercise specified that in each interrupt, you would receive a full packet per interrupt, as opposed to the 1 byte/interrupt in the LAB.
     So, at the start of the function, one would have to get the status_word through sys_inb(0x64, &status) (or define your own util_sys_inb). Set the BIT(7) and the BIT(3) and BIT(0) (because the exercise specified 4 bytes packets), so that the mouse could report info and that you were receiving one packet per interrupt, and write it on the port, through sys_outb(0x64, status_word). //Enabling, this way, the data reporting.
@@ -54,4 +54,5 @@ A) Similar to the first function of the Mouse Lab.  Worth 12 points/20. If not i
           
           
 B) This function would only be evaluated if one obtained at least 2/3 of the full grade of the first function. 
-   It was describing another protocol for the mouse, in which, for example, if the BIT(0) was not set, only 3 bytes would be read (the byte regarding the Z variation would not be necessary), among other similar things
+   It was describing another protocol for the mouse, in which, for example, if the BIT(0) was not set,
+ only 3 bytes would be read (the byte regarding the Z variation would not be necessary), among other similar things
