@@ -14,14 +14,21 @@ A) Similar to the first function of the Mouse Lab.  Worth 12 points/20. If not i
          -> If BIT(4) was set, RB was pressed.
          -> If BIT(3) was set, X Overflow.
          -> If BIT(2) was set, Y overflow.
-     The 2nd, 3rd and 4th had information regarding the variation of z, y & x, respectively. Each variation was presented in 2's complement. So for each byte read, to convert it to "normal":
+     The 2nd, 3rd and 4th had information regarding the variation of z, y & x, respectively. Each variation was presented in 2's 
+complement. So for each byte read, to convert it to "normal":
          //In the x variation example:
-         uint8_t tmp = BIT(6) | BIT(5) | BIT(4) | BIT(3) | BIT(2) | BIT(1) | BIT(0); //get the last 7 bits. The 8th represents the signal
-         if (byte_read < 0) pp.delta_x = tmp - 128 (2^7); else pp.delta_x = tmp; (pp was the struct which had the information of each packet read, just like in the LAB).
+         uint8_t tmp = BIT(6) | BIT(5) | BIT(4) | BIT(3) | BIT(2) | BIT(1) | BIT(0); //get the last 7 bits. The 8th represents the 
+signal
+         if (byte_read < 0) pp.delta_x = tmp - 128 (2^7); else pp.delta_x = tmp; (pp was the struct which had the information of each 
+packet read, just like in the LAB).
          
                
-   The exercise specified that in each interrupt, you would receive a full packet per interrupt, as opposed to the 1 byte/interrupt in the LAB.
-    So, at the start of the function, one would have to get the status_word through sys_inb(0x64, &status) (or define your own util_sys_inb). Set the BIT(7) and the BIT(3) and BIT(0) (because the exercise specified 4 bytes packets), so that the mouse could report info and that you were receiving one packet per interrupt, and write it on the port, through sys_outb(0x64, status_word). //Enabling, this way, the data reporting.
+   The exercise specified that in each interrupt, you would receive a full packet per interrupt, as opposed to the 1 byte/interrupt in 
+the LAB.
+    So, at the start of the function, one would have to get the status_word through sys_inb(0x64, &status) (or define your own 
+util_sys_inb). Set the BIT(7) and the BIT(3) and BIT(0) (because the exercise specified 4 bytes packets), so that the mouse could report
+ info and that you were receiving one packet per interrupt, and write it on the port, through sys_outb(0x64, status_word). //Enabling, 
+this way, the data reporting.
     
    Afterwards, one would have to create the 2 functions to subscribe and unsubscribe interrupts, just like it was done in the Labs. 
     After all of this is set, we move on to the interrupt loop.
@@ -47,9 +54,11 @@ A) Similar to the first function of the Mouse Lab.  Worth 12 points/20. If not i
       else if (counter == 4) parse the information regarding X variation; counter = 1;
       
       
-   After the interrupt loop, all that was left to do was unsubscribe mouse interrupts and restore the status word to its default (specified in the exercise). 
+   After the interrupt loop, all that was left to do was unsubscribe mouse interrupts and restore the status word to its default 
+(specified in the exercise). 
    To achieve the first requirement, one would simply have to use the mouse_unsubscribe_int();
-   To achieve the second requirement, one would have to disable data reporting (clear BIT(7), set BIT(3) and clear BIT(0), and then sys_outb(0x64, resulting_word);
+   To achieve the second requirement, one would have to disable data reporting (clear BIT(7), set BIT(3) and clear BIT(0), and then 
+sys_outb(0x64, resulting_word);
           
           
           
