@@ -1,0 +1,108 @@
+\hypertarget{video__card_8c}{}\doxysection{video\+\_\+card.\+c File Reference}
+\label{video__card_8c}\index{video\_card.c@{video\_card.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+Include dependency graph for video\+\_\+card.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{video__card_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} \mbox{\hyperlink{video__card_8c_a5c1011cf815c12282ac785c0ecc12e60}{vg\+\_\+set\+\_\+mode}} (short mode)
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{video__card_8c_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} \mbox{\hyperlink{video__card_8c_a8776ba26b88899bf60e07e1f4c2a5810}{color\+Pixel}} (unsigned x, unsigned y, unsigned long color)
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} \mbox{\hyperlink{video__card_8c_a3456b8539e4326dd13cbfc4f81b609f1}{get\+\_\+h\+\_\+res}} ()
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} \mbox{\hyperlink{video__card_8c_aa6c3dbf699d3dda9444bdcd71bf85234}{get\+\_\+v\+\_\+res}} ()
+\item 
+char $\ast$ \mbox{\hyperlink{video__card_8c_af98370c7504d4145e2009a7b940c728e}{vg\+\_\+address}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{video__card_8c_a8776ba26b88899bf60e07e1f4c2a5810}\label{video__card_8c_a8776ba26b88899bf60e07e1f4c2a5810}} 
+\index{video\_card.c@{video\_card.c}!colorPixel@{colorPixel}}
+\index{colorPixel@{colorPixel}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{colorPixel()}{colorPixel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} color\+Pixel (\begin{DoxyParamCaption}\item[{unsigned}]{x,  }\item[{unsigned}]{y,  }\item[{unsigned long}]{color }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a8776ba26b88899bf60e07e1f4c2a5810_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a3456b8539e4326dd13cbfc4f81b609f1}\label{video__card_8c_a3456b8539e4326dd13cbfc4f81b609f1}} 
+\index{video\_card.c@{video\_card.c}!get\_h\_res@{get\_h\_res}}
+\index{get\_h\_res@{get\_h\_res}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{get\_h\_res()}{get\_h\_res()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} get\+\_\+h\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{video__card_8c_aa6c3dbf699d3dda9444bdcd71bf85234}\label{video__card_8c_aa6c3dbf699d3dda9444bdcd71bf85234}} 
+\index{video\_card.c@{video\_card.c}!get\_v\_res@{get\_v\_res}}
+\index{get\_v\_res@{get\_v\_res}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{get\_v\_res()}{get\_v\_res()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} get\+\_\+v\+\_\+res (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{video__card_8c_af98370c7504d4145e2009a7b940c728e}\label{video__card_8c_af98370c7504d4145e2009a7b940c728e}} 
+\index{video\_card.c@{video\_card.c}!vg\_address@{vg\_address}}
+\index{vg\_address@{vg\_address}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{vg\_address()}{vg\_address()}}
+{\footnotesize\ttfamily char$\ast$ vg\+\_\+address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6}\label{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6}} 
+\index{video\_card.c@{video\_card.c}!vg\_draw\_hline@{vg\_draw\_hline}}
+\index{vg\_draw\_hline@{vg\_draw\_hline}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a99d2da2559e11200c6b40c469e9977ec}\label{video__card_8c_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{video\_card.c@{video\_card.c}!vg\_draw\_rectangle@{vg\_draw\_rectangle}}
+\index{vg\_draw\_rectangle@{vg\_draw\_rectangle}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{vg\_draw\_rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a5c1011cf815c12282ac785c0ecc12e60}\label{video__card_8c_a5c1011cf815c12282ac785c0ecc12e60}} 
+\index{video\_card.c@{video\_card.c}!vg\_set\_mode@{vg\_set\_mode}}
+\index{vg\_set\_mode@{vg\_set\_mode}!video\_card.c@{video\_card.c}}
+\doxysubsubsection{\texorpdfstring{vg\_set\_mode()}{vg\_set\_mode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} vg\+\_\+set\+\_\+mode (\begin{DoxyParamCaption}\item[{short}]{mode }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a5c1011cf815c12282ac785c0ecc12e60_icgraph}
+\end{center}
+\end{figure}

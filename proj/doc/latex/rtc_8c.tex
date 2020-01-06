@@ -1,0 +1,342 @@
+\hypertarget{rtc_8c}{}\doxysection{rtc.\+c File Reference}
+\label{rtc_8c}\index{rtc.c@{rtc.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+Include dependency graph for rtc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}{rtc\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{rtc_8c_a9d4850bb2a488644672d43287f160622}{rtc\+\_\+unsubscribe\+\_\+int}} ()
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{rtc_8c_a34f9afb2ad11038fcf517d1ee4a9b084}{rtc\+\_\+disable}} ()
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{rtc_8c_ac40d1e184756a7f3bb1969eefbbfa708}{rtc\+\_\+enable}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_ab978d2c26e3ed7ed909d3e404ca9b342}{rtc\+\_\+get\+\_\+day}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_a2154d5f96ecb6f800f2cdc804f54cd80}{rtc\+\_\+get\+\_\+month}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_acbb2b4da68e8b8c6bcd2fb0c86e0cdcf}{rtc\+\_\+get\+\_\+year}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_ab83cf19d9c59636407bc998c96dd97dc}{rtc\+\_\+get\+\_\+seconds}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_a93bb29bdd4093bb2c9e64fa0402ac573}{rtc\+\_\+get\+\_\+minutes}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_a66fb09c6b3df6258b5871f5b661aa01e}{rtc\+\_\+get\+\_\+hours}} ()
+\item 
+void \mbox{\hyperlink{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056}{rtc\+\_\+ih}} ()
+\item 
+void \mbox{\hyperlink{rtc_8c_abc313237e00236eec84b5263f56e08ab}{rtc\+\_\+start}} ()
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_a23e7633b98a064a1c91dc95a441760c4}{bcd\+\_\+to\+\_\+dec}} (uint8\+\_\+t bcd)
+\item 
+void \mbox{\hyperlink{rtc_8c_a92cba0eab016063c84d127977cc6ee89}{print\+Date}} ()
+\item 
+void \mbox{\hyperlink{rtc_8c_ac78edd18ba18ffa2288ef058728b6c18}{print\+Time}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} \mbox{\hyperlink{rtc_8c_a9fc22e6d8203dddf397ca66d65055d1d}{hook\+\_\+id\+\_\+rtc}} = 3
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_afdc569e15fc959f60c10b4f3ea689920}{real\+Date}} \mbox{[}3\mbox{]}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{rtc_8c_a0c3d6b0f85f615ae8a846d22d81ad27e}{real\+Time}} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{rtc_8c_a23e7633b98a064a1c91dc95a441760c4}\label{rtc_8c_a23e7633b98a064a1c91dc95a441760c4}} 
+\index{rtc.c@{rtc.c}!bcd\_to\_dec@{bcd\_to\_dec}}
+\index{bcd\_to\_dec@{bcd\_to\_dec}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{bcd\_to\_dec()}{bcd\_to\_dec()}}
+{\footnotesize\ttfamily uint8\+\_\+t bcd\+\_\+to\+\_\+dec (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bcd }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a23e7633b98a064a1c91dc95a441760c4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a92cba0eab016063c84d127977cc6ee89}\label{rtc_8c_a92cba0eab016063c84d127977cc6ee89}} 
+\index{rtc.c@{rtc.c}!printDate@{printDate}}
+\index{printDate@{printDate}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{printDate()}{printDate()}}
+{\footnotesize\ttfamily void print\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{rtc_8c_a92cba0eab016063c84d127977cc6ee89_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_ac78edd18ba18ffa2288ef058728b6c18}\label{rtc_8c_ac78edd18ba18ffa2288ef058728b6c18}} 
+\index{rtc.c@{rtc.c}!printTime@{printTime}}
+\index{printTime@{printTime}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{printTime()}{printTime()}}
+{\footnotesize\ttfamily void print\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{rtc_8c_ac78edd18ba18ffa2288ef058728b6c18_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a34f9afb2ad11038fcf517d1ee4a9b084}\label{rtc_8c_a34f9afb2ad11038fcf517d1ee4a9b084}} 
+\index{rtc.c@{rtc.c}!rtc\_disable@{rtc\_disable}}
+\index{rtc\_disable@{rtc\_disable}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_disable()}{rtc\_disable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() rtc\+\_\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Disables interrupts for R\+TC \begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_ac40d1e184756a7f3bb1969eefbbfa708}\label{rtc_8c_ac40d1e184756a7f3bb1969eefbbfa708}} 
+\index{rtc.c@{rtc.c}!rtc\_enable@{rtc\_enable}}
+\index{rtc\_enable@{rtc\_enable}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_enable()}{rtc\_enable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() rtc\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Enables interrupts for R\+TC \begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{rtc_8c_ab978d2c26e3ed7ed909d3e404ca9b342}\label{rtc_8c_ab978d2c26e3ed7ed909d3e404ca9b342}} 
+\index{rtc.c@{rtc.c}!rtc\_get\_day@{rtc\_get\_day}}
+\index{rtc\_get\_day@{rtc\_get\_day}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_day()}{rtc\_get\_day()}}
+{\footnotesize\ttfamily uint8\+\_\+t rtc\+\_\+get\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the day and updates date array \begin{DoxyReturn}{Returns}
+day 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{rtc_8c_ab978d2c26e3ed7ed909d3e404ca9b342_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ab978d2c26e3ed7ed909d3e404ca9b342_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a66fb09c6b3df6258b5871f5b661aa01e}\label{rtc_8c_a66fb09c6b3df6258b5871f5b661aa01e}} 
+\index{rtc.c@{rtc.c}!rtc\_get\_hours@{rtc\_get\_hours}}
+\index{rtc\_get\_hours@{rtc\_get\_hours}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_hours()}{rtc\_get\_hours()}}
+{\footnotesize\ttfamily uint8\+\_\+t rtc\+\_\+get\+\_\+hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the hours and updates time array \begin{DoxyReturn}{Returns}
+hours 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{rtc_8c_a66fb09c6b3df6258b5871f5b661aa01e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a66fb09c6b3df6258b5871f5b661aa01e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a93bb29bdd4093bb2c9e64fa0402ac573}\label{rtc_8c_a93bb29bdd4093bb2c9e64fa0402ac573}} 
+\index{rtc.c@{rtc.c}!rtc\_get\_minutes@{rtc\_get\_minutes}}
+\index{rtc\_get\_minutes@{rtc\_get\_minutes}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_minutes()}{rtc\_get\_minutes()}}
+{\footnotesize\ttfamily uint8\+\_\+t rtc\+\_\+get\+\_\+minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the minutes and updates time array \begin{DoxyReturn}{Returns}
+minutes 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{rtc_8c_a93bb29bdd4093bb2c9e64fa0402ac573_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a93bb29bdd4093bb2c9e64fa0402ac573_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a2154d5f96ecb6f800f2cdc804f54cd80}\label{rtc_8c_a2154d5f96ecb6f800f2cdc804f54cd80}} 
+\index{rtc.c@{rtc.c}!rtc\_get\_month@{rtc\_get\_month}}
+\index{rtc\_get\_month@{rtc\_get\_month}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_month()}{rtc\_get\_month()}}
+{\footnotesize\ttfamily uint8\+\_\+t rtc\+\_\+get\+\_\+month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the month and updates date array \begin{DoxyReturn}{Returns}
+month 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{rtc_8c_a2154d5f96ecb6f800f2cdc804f54cd80_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a2154d5f96ecb6f800f2cdc804f54cd80_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_ab83cf19d9c59636407bc998c96dd97dc}\label{rtc_8c_ab83cf19d9c59636407bc998c96dd97dc}} 
+\index{rtc.c@{rtc.c}!rtc\_get\_seconds@{rtc\_get\_seconds}}
+\index{rtc\_get\_seconds@{rtc\_get\_seconds}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_seconds()}{rtc\_get\_seconds()}}
+{\footnotesize\ttfamily uint8\+\_\+t rtc\+\_\+get\+\_\+seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the seconds and updates time array \begin{DoxyReturn}{Returns}
+seconds 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{rtc_8c_ab83cf19d9c59636407bc998c96dd97dc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_ab83cf19d9c59636407bc998c96dd97dc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_acbb2b4da68e8b8c6bcd2fb0c86e0cdcf}\label{rtc_8c_acbb2b4da68e8b8c6bcd2fb0c86e0cdcf}} 
+\index{rtc.c@{rtc.c}!rtc\_get\_year@{rtc\_get\_year}}
+\index{rtc\_get\_year@{rtc\_get\_year}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_get\_year()}{rtc\_get\_year()}}
+{\footnotesize\ttfamily uint8\+\_\+t rtc\+\_\+get\+\_\+year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the year and updates date array \begin{DoxyReturn}{Returns}
+year 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{rtc_8c_acbb2b4da68e8b8c6bcd2fb0c86e0cdcf_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_acbb2b4da68e8b8c6bcd2fb0c86e0cdcf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056}\label{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056}} 
+\index{rtc.c@{rtc.c}!rtc\_ih@{rtc\_ih}}
+\index{rtc\_ih@{rtc\_ih}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_ih()}{rtc\_ih()}}
+{\footnotesize\ttfamily void rtc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Interrupt Handler for the R\+TC Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_a75dad42881d64cf07cf1bdc2979a7056_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_abc313237e00236eec84b5263f56e08ab}\label{rtc_8c_abc313237e00236eec84b5263f56e08ab}} 
+\index{rtc.c@{rtc.c}!rtc\_start@{rtc\_start}}
+\index{rtc\_start@{rtc\_start}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_start()}{rtc\_start()}}
+{\footnotesize\ttfamily void rtc\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the initial information of time and date Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c_abc313237e00236eec84b5263f56e08ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{rtc_8c_abc313237e00236eec84b5263f56e08ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}\label{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89}} 
+\index{rtc.c@{rtc.c}!rtc\_subscribe\_int@{rtc\_subscribe\_int}}
+\index{rtc\_subscribe\_int@{rtc\_subscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_subscribe\_int()}{rtc\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() rtc\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+Subscribes the interruptions for the R\+TC 
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{rtc_8c_a6bbe679f115cec90d36d50eb2aac1b89_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{rtc_8c_a9d4850bb2a488644672d43287f160622}\label{rtc_8c_a9d4850bb2a488644672d43287f160622}} 
+\index{rtc.c@{rtc.c}!rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}}
+\index{rtc\_unsubscribe\_int@{rtc\_unsubscribe\_int}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{rtc\_unsubscribe\_int()}{rtc\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() rtc\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Unsubscribes interrupts for R\+TC \begin{DoxyReturn}{Returns}
+0 in case of success, 1 otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{rtc_8c_a9d4850bb2a488644672d43287f160622_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_a9fc22e6d8203dddf397ca66d65055d1d}\label{rtc_8c_a9fc22e6d8203dddf397ca66d65055d1d}} 
+\index{rtc.c@{rtc.c}!hook\_id\_rtc@{hook\_id\_rtc}}
+\index{hook\_id\_rtc@{hook\_id\_rtc}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{hook\_id\_rtc}{hook\_id\_rtc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} hook\+\_\+id\+\_\+rtc = 3}
+
+\mbox{\Hypertarget{rtc_8c_afdc569e15fc959f60c10b4f3ea689920}\label{rtc_8c_afdc569e15fc959f60c10b4f3ea689920}} 
+\index{rtc.c@{rtc.c}!realDate@{realDate}}
+\index{realDate@{realDate}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{realDate}{realDate}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+Date\mbox{[}3\mbox{]}}
+
+\mbox{\Hypertarget{rtc_8c_a0c3d6b0f85f615ae8a846d22d81ad27e}\label{rtc_8c_a0c3d6b0f85f615ae8a846d22d81ad27e}} 
+\index{rtc.c@{rtc.c}!realTime@{realTime}}
+\index{realTime@{realTime}!rtc.c@{rtc.c}}
+\doxysubsubsection{\texorpdfstring{realTime}{realTime}}
+{\footnotesize\ttfamily uint8\+\_\+t real\+Time\mbox{[}3\mbox{]}}
+

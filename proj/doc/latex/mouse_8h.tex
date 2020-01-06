@@ -1,0 +1,120 @@
+\hypertarget{mouse_8h}{}\doxysection{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.h@{mouse.h}}
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{mouse_8h_a20285aed4b3ef45812cd967532dd09db}{mouse\+\_\+subscribe\+\_\+int}} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() \mbox{\hyperlink{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}{mouse\+\_\+unsubscribe\+\_\+int}} ()
+\item 
+void() \mbox{\hyperlink{mouse_8h_a210374b50462acdedab00df64d5cea3c}{mouse\+\_\+ih}} ()
+\item 
+void() \mbox{\hyperlink{mouse_8h_ae439201439f4c6c2b846ced0cebca434}{process\+\_\+packets}} ()
+\item 
+void() \mbox{\hyperlink{mouse_8h_a35ffe3f9925f52283c0c39c7920d4f53}{packets\+\_\+parse}} ()
+\item 
+\mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} \mbox{\hyperlink{mouse_8h_a8ebcfd006aa45b428abca8c1a5bba783}{write\+\_\+cmd}} (unsigned long cmd)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{mouse_8h_a210374b50462acdedab00df64d5cea3c}\label{mouse_8h_a210374b50462acdedab00df64d5cea3c}} 
+\index{mouse.h@{mouse.h}!mouse\_ih@{mouse\_ih}}
+\index{mouse\_ih@{mouse\_ih}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_ih()}{mouse\_ih()}}
+{\footnotesize\ttfamily void() mouse\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{mouse_8h_a210374b50462acdedab00df64d5cea3c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a210374b50462acdedab00df64d5cea3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a20285aed4b3ef45812cd967532dd09db}\label{mouse_8h_a20285aed4b3ef45812cd967532dd09db}} 
+\index{mouse.h@{mouse.h}!mouse\_subscribe\_int@{mouse\_subscribe\_int}}
+\index{mouse\_subscribe\_int@{mouse\_subscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_subscribe\_int()}{mouse\_subscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() mouse\+\_\+subscribe\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a20285aed4b3ef45812cd967532dd09db_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}\label{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3}} 
+\index{mouse.h@{mouse.h}!mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}}
+\index{mouse\_unsubscribe\_int@{mouse\_unsubscribe\_int}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{mouse\_unsubscribe\_int()}{mouse\_unsubscribe\_int()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}}() mouse\+\_\+unsubscribe\+\_\+int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a3ecf823d80520009ae5e0d76ae40a3c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_a35ffe3f9925f52283c0c39c7920d4f53}\label{mouse_8h_a35ffe3f9925f52283c0c39c7920d4f53}} 
+\index{mouse.h@{mouse.h}!packets\_parse@{packets\_parse}}
+\index{packets\_parse@{packets\_parse}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{packets\_parse()}{packets\_parse()}}
+{\footnotesize\ttfamily void() packets\+\_\+parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a35ffe3f9925f52283c0c39c7920d4f53_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{mouse_8h_ae439201439f4c6c2b846ced0cebca434}\label{mouse_8h_ae439201439f4c6c2b846ced0cebca434}} 
+\index{mouse.h@{mouse.h}!process\_packets@{process\_packets}}
+\index{process\_packets@{process\_packets}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{process\_packets()}{process\_packets()}}
+{\footnotesize\ttfamily void() process\+\_\+packets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{mouse_8h_a8ebcfd006aa45b428abca8c1a5bba783}\label{mouse_8h_a8ebcfd006aa45b428abca8c1a5bba783}} 
+\index{mouse.h@{mouse.h}!write\_cmd@{write\_cmd}}
+\index{write\_cmd@{write\_cmd}!mouse.h@{mouse.h}}
+\doxysubsubsection{\texorpdfstring{write\_cmd()}{write\_cmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{keyboard_8h_ad9cb562e18c185a2ac0be91669cc498f}{int}} write\+\_\+cmd (\begin{DoxyParamCaption}\item[{unsigned long}]{cmd }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{mouse_8h_a8ebcfd006aa45b428abca8c1a5bba783_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h_a8ebcfd006aa45b428abca8c1a5bba783_icgraph}
+\end{center}
+\end{figure}
