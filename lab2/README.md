@@ -1,3 +1,3 @@
 Lab regarding the timer
 
-# Grade: 93/100
+## Grade: 93/100
